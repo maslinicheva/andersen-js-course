@@ -10,3 +10,15 @@
  * console.log(indexOfAll([1, 2, 3, 1, 2, 3], 1)); -> [0, 3]
  * console.log(indexOfAll([1, 2, 3], 4)); -> []
  */
+
+ function indexOfAll(array, value){
+     let newArr = []
+     for(let i = 0; i < array.length; i++){
+         if(value == array[i]){
+             newArr.push(i)
+         }
+     }
+     return newArr
+ }
+ console.log(indexOfAll([1, 2, 3, 1, 2, 3], 1));
+ console.log(indexOfAll([1, 2, 3], 4));
