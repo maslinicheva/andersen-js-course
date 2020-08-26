@@ -15,3 +15,24 @@
  * generator.next(); -> 'Complete!'
  * generator.next(); -> 'Complete!'
  */
+
+ function createGenerator(array){
+    let value = 0;
+  return {
+    next() {
+      if (value < array.length) {
+        console.log(array[value++]);
+      } else {
+        value++;
+        console.log("Complete!");
+      }
+    }
+  };
+}
+const generator = createGenerator([1, '6', 3, 2]);
+generator.next();
+generator.next(); 
+generator.next(); 
+generator.next(); 
+generator.next(); 
+generator.next();

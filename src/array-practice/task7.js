@@ -11,3 +11,20 @@
  * console.log(take([1, 2, 3], 5)); -> [1, 2, 3]
  * console.log(take([1, 2, 3], 2)); -> [1, 2]
  */
+
+ function take(array, count){
+     let len = array.length;
+     let newArr = []
+     if(len < count){
+         for(let i = 0; i < len; i++){
+            newArr.push(array[i])
+         }
+     } else{
+        for(let i = 0; i < count; i++){
+            newArr.push(array[i])
+         }
+     }
+     return newArr
+ }
+ console.log(take([1, 2, 3], 5));
+ console.log(take([1, 2, 3], 2));

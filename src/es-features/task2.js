@@ -16,4 +16,7 @@ export function task2Old(a, b) {
 // Напишите реализацию функции task2Old на ES6+ ниже этого комментария.
 // При желании, можете использовать стрелочную функцию, вместо обычной
 
-export function task2New() {}
+export function task2New(a, b, ...elements) {
+  return (a + b) * elements.length;
+}
+console.log(task2New(1, 2, "test", false, "new", "best") === 12);
